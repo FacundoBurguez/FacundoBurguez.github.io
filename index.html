@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Facundo Burguez – Backend Developer</title>
+  <meta name="description" content="Portafolio de Facundo Burguez: Backend Developer (Python, Django, Flask)." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css" />
+  <link rel="icon" href="assets/favicon.png" />
+</head>
+<body>
+  <header class="nav">
+    <a href="#home" class="logo">FB</a>
+    <nav>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#skills">Stack</a>
+      <a href="#experiencia">Experiencia</a>
+      <a href="#contacto" class="btn">Contacto</a>
+    </nav>
+  </header>
+
+  <main id="home" class="hero">
+    <div class="hero-text">
+      <h1>Hola, soy <span class="accent">Facundo Burguez</span></h1>
+      <p class="lead">Backend Developer · Python | Django | Flask · enfoque en <strong>calidad</strong>, <strong>seguridad</strong> y <strong>escalabilidad</strong>.</p>
+      <div class="cta">
+        <a class="btn" href="#proyectos">Ver proyectos</a>
+        <a class="btn ghost" href="mailto:facu_burguez@hotmail.com">Escríbeme</a>
+        <a class="btn ghost" target="_blank" href="CV_Facundo_Burguez.pdf">Descargar CV</a>
+      </div>
+      <div class="meta">
+        <span>Montevideo, Uruguay</span> • <span>Disponible para proyectos</span>
+      </div>
+      <div class="links">
+        <a target="_blank" href="https://github.com/facundoburguez" aria-label="GitHub">GitHub</a>
+        <a target="_blank" href="https://www.linkedin.com/in/" aria-label="LinkedIn">LinkedIn</a>
+        <a target="_blank" href="https://facundoburguez.github.io" aria-label="Sitio">Sitio</a>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <img src="assets/facundo.jpg" alt="Foto de Facundo" onerror="this.style.display='none'">
+    </div>
+  </main>
+
+  <section id="proyectos" class="section">
+    <h2>Proyectos destacados</h2>
+    <div class="grid">
+      <article class="card">
+        <h3>App Logística (Flask)</h3>
+        <p>Sistema multiempresa para control de productos, stock y entregas en tiempo real. Autenticación con sesiones, panel unificado y diseño moderno.</p>
+        <ul class="tags"><li>Flask</li><li>SQLite</li><li>Auth</li><li>Bootstrap/AOS</li></ul>
+        <div class="actions">
+          <a class="btn" target="_blank" href="#">Demo</a>
+          <a class="btn ghost" target="_blank" href="#">Código</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <h3>Directorio Genérico (Django)</h3>
+        <p>APIs con feature flags, permisos granulares y tests automáticos. Optimización de queries y serialización robusta.</p>
+        <ul class="tags"><li>Django</li><li>DRF</li><li>Testing</li><li>Feature Flags</li></ul>
+        <div class="actions">
+          <a class="btn ghost" target="_blank" href="#">Readme</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <h3>Sistema Restaurantes</h3>
+        <p>Pedidos desde el móvil del mozo hacia cocina, control de ingresos/egresos y visión centralizada por mesas.</p>
+        <ul class="tags"><li>Flask</li><li>SQLAlchemy</li><li>WebSockets*</li></ul>
+        <div class="actions">
+          <a class="btn ghost" target="_blank" href="#">Código</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="skills" class="section alt">
+    <h2>Stack y herramientas</h2>
+    <div class="grid skills">
+      <div>
+        <h4>Backend</h4>
+        <ul>
+          <li>Python (3.x), FastAPI*</li>
+          <li>Django + DRF, Flask</li>
+          <li>Autenticación, permisos, testing (pytest)</li>
+          <li>REST, JSON, JWT</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Datos</h4>
+        <ul>
+          <li>PostgreSQL, SQLite</li>
+          <li>ORM: Django ORM, SQLAlchemy</li>
+          <li>Optimización de queries</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Infra & DevOps</h4>
+        <ul>
+          <li>Linux, Git/GitHub</li>
+          <li>CI/CD básico (GitHub Actions)</li>
+          <li>Deploy en Render.com</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Otros</h4>
+        <ul>
+          <li>AOS/animaciones ligeras</li>
+          <li>Buenas prácticas, seguridad, revisión de código</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="experiencia" class="section">
+    <h2>Experiencia</h2>
+    <div class="timeline">
+      <div class="item">
+        <span class="when">2024–2025</span>
+        <div class="what">
+          <strong>Backend Developer · Django/Flask</strong>
+          <p>Implementación de endpoints, serializadores, permisos por rol, feature flags y tests. Enfoque en rendimiento (evitar N+1) y estabilidad.</p>
+        </div>
+      </div>
+      <div class="item">
+        <span class="when">Logística</span>
+        <div class="what">
+          <strong>Background en logística</strong>
+          <p>Diseño de procesos y software para trazabilidad y operaciones de última milla.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto" class="section alt">
+    <h2>Contacto</h2>
+    <p>¿Tienes un proyecto o quieres colaborar? Escríbeme y te respondo a la brevedad.</p>
+    <form class="contact" name="contact" onsubmit="return sendMessage(event)">
+      <div class="row">
+        <input type="text" name="name" placeholder="Tu nombre" required>
+        <input type="email" name="email" placeholder="Tu email" required>
+      </div>
+      <textarea name="message" rows="6" placeholder="Cuéntame sobre tu proyecto" required></textarea>
+      <button class="btn" type="submit">Enviar</button>
+      <p id="form-status" role="status" aria-live="polite"></p>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <small>© <span id="year"></span> Facundo Burguez · Hecho con HTML/CSS/JS · Deploy en GitHub Pages</small>
+  </footer>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>
