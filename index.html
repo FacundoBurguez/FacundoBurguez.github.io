@@ -3,24 +3,31 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Facundo Burguez </title>
+  <title>Facundo Burguez</title>
   <meta name="description" content="Portafolio de Facundo Burguez" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/style.css" />
   <link rel="icon" href="assets/favicon.png" />
+  <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
   <header class="nav">
     <a href="#home" class="logo">FB</a>
-    <nav>
+
+    <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Abrir menú">
+      ☰
+    </button>
+
+
+    <nav id="primary-nav">
       <a href="#proyectos">Proyectos</a>
       <a href="#skills">Stack</a>
       <a href="#experiencia">Experiencia</a>
       <a href="#contacto" class="btn">Contacto</a>
     </nav>
   </header>
+
 
   <main id="home" class="hero">
     <div class="hero-text">
@@ -32,7 +39,7 @@
         <a class="btn ghost" target="_blank" href="CV_Facundo_Burguez.pdf">Descargar CV</a>
       </div>
       <div class="meta">
-        <span>Uruguay</span> 
+        <span>Uruguay</span>
       </div>
       <div class="links">
         <a target="_blank" href="https://github.com/facundoburguez" aria-label="GitHub">GitHub</a>
@@ -41,9 +48,14 @@
       </div>
     </div>
     <div class="hero-photo">
-      <img src="assets/facundo.jpg" alt="Foto de Facundo" onerror="this.style.display='none'">
+      <img
+        src="assets/facundo.jpg"
+        alt="Foto de Facundo"
+        sizes="(max-width: 980px) 90vw, 420px"
+        onerror="this.style.display='none'">
     </div>
   </main>
+
 
   <section id="proyectos" class="section">
     <h2>Proyectos</h2>
@@ -58,6 +70,7 @@
         </div>
       </article>
 
+
       <article class="card">
         <h3>Directorio Genérico (Django)</h3>
         <p>APIs con feature flags, permisos granulares y tests automáticos. Optimización de queries y serialización robusta.</p>
@@ -68,6 +81,7 @@
       </article>
     </div>
   </section>
+
 
   <section id="skills" class="section alt">
     <h2>Stack y herramientas</h2>
@@ -107,6 +121,7 @@
     </div>
   </section>
 
+
   <section id="experiencia" class="section">
     <h2>Experiencia</h2>
     <div class="timeline">
@@ -127,6 +142,7 @@
     </div>
   </section>
 
+
   <section id="contacto" class="section alt">
     <h2>Contacto</h2>
     <form class="contact" name="contact" onsubmit="return sendMessage(event)">
@@ -140,10 +156,14 @@
     </form>
   </section>
 
+
   <footer class="footer">
     <small>© <span id="year"></span> Facundo Burguez · Hecho con HTML/CSS/JS · Deploy en GitHub Pages</small>
   </footer>
 
+
   <script src="assets/script.js"></script>
 </body>
 </html>
+
+
